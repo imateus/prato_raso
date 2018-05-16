@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".termosDeUso">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="TERMOS E CONDIÇÕES GERAIS DE USO "
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <TextView
+        android:id="@+id/txtTitulo2"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="DO APLICATIVO PRATO RASO"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <TextView
+        android:id="@+id/txtInicio"
+        android:layout_width="350dp"
+        android:layout_height="193dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="Estes termos e condições gerais de uso aplicam-se aos serviços prestados pela pessoa jurídica Uninove, devidamente registrada sob o CNPJ n. 09.900.999/0009-99, com sede em:              R. Amador Bueno, 389/491 - Santo Amaro, São Paulo - SP, 04752-900
+por meio do aplicativo Prato Raso.
+"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/txtTexto1"
+        android:layout_width="335dp"
+        android:layout_height="135dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="1. DO OBJETO
+O aplicativo Prato Raso caracteriza-se pela prestação dos seguintes serviços:
+Disponibilização de ferramenta de busca ou cadastro de receitas de variados tipos.
+1. DO OBJETO
+O aplicativo Prato Raso caracteriza-se pela prestação dos seguintes serviços:
+Disponibilização de ferramenta de busca ou cadastro de receitas de variados tipos.
+"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <TextView
+        android:id="@+id/txtTexto2"
+        android:layout_width="335dp"
+        android:layout_height="99dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:text="2. DA ACEITAÇÃO DOS TERMOS E CONDIÇÕES GERAIS DE USO
+Todos aqueles que desejarem ter acesso aos serviços ofertados através do aplicativo Prato Raso deverão, primeiramente, se informar sobre as regras que compõem o presente instrumento, as quais ficarão disponíveis para pronta e ampla consulta, em link direto no próprio aplicativo.
+Ao utilizar o aplicativo Prato Raso, o usuário aceita integralmente as presentes normas e compromete-se a observá-las, sob risco de aplicação das penalidades cabíveis. Antes de iniciar qualquer navegação no aplicativo, o usuário deverá cientificar-se de eventuais modificações ou atualizações ocorridas neste termos.
+Caso não concorde com quaisquer das regras aqui descritas, o usuário deve, imediatamente, abster-se de utilizar o serviço. Se for de seu interesse, poderá, ainda, entrar em contato com o serviço de atendimento ao cliente, para apresentar-lhe as suas ressalvas.
+"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.242"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ScrollView
+        android:layout_width="10dp"
+        android:layout_height="496dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086"
+        tools:layout_editor_absoluteX="370dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
