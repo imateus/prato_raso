@@ -18,8 +18,8 @@
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:srcCompat="@mipmap/inhegas_perfil"
-        android:foreground="@drawable/img" />
+        android:foreground="@drawable/img"
+        app:srcCompat="@mipmap/inhegas_perfil" />
 
 
     <TextView

@@ -1,5 +1,6 @@
 package com.example.mateusdiaspardino.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -78,18 +79,21 @@ public class MainActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
-        int id = item.getItemId();
+        String id = (String) item.getTitle();
 
-        if (id == R.id.nav_favoritas) {
-            // Handle the camera action
-        } else if (id == R.id.nav_contato) {
+        if (id.equals("Sair")) {
+            Intent feed = new Intent(this, LoginActivity.class);
+            startActivity(feed);
+        }
 
-        } else if (id == R.id.nav_sobre_nos) {
+        if (id.equals("Sobre nós")) {
+            Intent feed = new Intent(this, sobreNos.class);
+            startActivity(feed);
+        }
 
-        } else if (id == R.id.nav_termos_de_uso) {
-
-        } else if (id == R.id.nav_logout) {
-
+        if (id.equals("Termos de uso")) {
+            Intent feed = new Intent(this, termosDeUso.class);
+            startActivity(feed);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
