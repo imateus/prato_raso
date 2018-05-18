@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_fingerprint"
+            android:title="Efetuar login" />
+        <item
+            android:id="@+id/nav_recipes"
+            android:icon="@drawable/ic_import_contacts"
+            android:title="Minhas receitas" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_favorite"
+            android:title="Receitas favoritas" />
+        <item
+            android:id="@+id/nav_contacts"
+            android:icon="@drawable/ic_email"
+            android:title="Contatos" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info"
+            android:title="Sobre nós" />
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/ic_library"
+            android:title="Termos de uso" />
+        <item
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_exit"
+            android:title="Sair" />
+    </group>
+
+</menu>

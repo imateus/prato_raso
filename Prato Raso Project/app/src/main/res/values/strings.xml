@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Prato Raso</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="category_array">
+        <item>Categoria</item>
+        <item>Saudável</item>
+        <item>Ave</item>
+        <item>Bebida</item>
+        <item>Bolo</item>
+        <item>Torta</item>
+        <item>Carne</item>
+        <item>Sobremesa</item>
+        <item>Lanche</item>
+        <item>Massa</item>
+        <item>Fruto do mar</item>
+    </string-array>
+
+    <string-array name="difficulty_array">
+        <item>Dificuldade</item>
+        <item>Fácil</item>
+        <item>Médio</item>
+        <item>Difícil</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+</resources>

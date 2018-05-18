@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "626194168087",
+    "firebase_url": "https://project-prato-raso.firebaseio.com",
+    "project_id": "project-prato-raso",
+    "storage_bucket": "project-prato-raso.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:626194168087:android:4ce440ed578fec38",
+        "android_client_info": {
+          "package_name": "com.example.hgjunior.pratorasoproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "626194168087-jdh49um14g39009buur95udea0ops5tm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hgjunior.pratorasoproject",
+            "certificate_hash": "b9422612ecf1be82b6d1e11d7ac1e52efd2f6f87"
+          }
+        },
+        {
+          "client_id": "626194168087-f1skh5h8rnriir06kv2rjmbafm9d0s46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP1J3XlAqAV7HpsNcpI0mQ4o8No5jlwnM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "626194168087-f1skh5h8rnriir06kv2rjmbafm9d0s46.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
