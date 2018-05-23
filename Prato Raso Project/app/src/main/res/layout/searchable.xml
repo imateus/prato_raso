@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--@author Mateus Dias Pardinho-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchRecipeActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="66dp"
+        android:ems="10"
+        android:hint="busca de receitas"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:theme="@style/EditTextSearchStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="39dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/cardview_shadow_end_color"
+        android:onClick="onBackPressed"
+        android:tint="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+        app:layout_constraintEnd_toStartOf="@+id/editTextSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextSearch"
+        app:srcCompat="?attr/actionModeCloseDrawable" />
+
+
+</android.support.constraint.ConstraintLayout>
