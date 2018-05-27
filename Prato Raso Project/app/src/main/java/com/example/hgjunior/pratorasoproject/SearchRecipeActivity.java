@@ -6,9 +6,11 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +32,7 @@ import com.example.hgjunior.pratorasoproject.adapters.RecipeAdapter;
 import com.example.hgjunior.pratorasoproject.connections.ConnectionFirebase;
 import com.example.hgjunior.pratorasoproject.connections.ConnectionPreferences;
 import com.example.hgjunior.pratorasoproject.models.Recipe;
+import com.example.hgjunior.pratorasoproject.utils.Utils;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -55,6 +58,7 @@ public class SearchRecipeActivity extends AppCompatActivity implements TextView.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_recipe);
+        Utils.darkenStatusBar(this, 0x7f06002c);
 
         EditText editText = (EditText) findViewById(R.id.editTextSearch);
         editText.setOnEditorActionListener(this);
