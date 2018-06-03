@@ -121,7 +121,7 @@ public class SearchRecipeActivity extends AppCompatActivity implements TextView.
             for (Recipe newRecipe : recipesAll) {
                 EditText editText = (EditText) findViewById(R.id.editTextSearch);
                 String text = editText.getText().toString();
-                if (newRecipe.getName().contains(text)){
+                if (!text.isEmpty() && newRecipe.getName().toLowerCase().contains(text.toLowerCase())){
                     recipes.add(newRecipe);
                 }
             }
