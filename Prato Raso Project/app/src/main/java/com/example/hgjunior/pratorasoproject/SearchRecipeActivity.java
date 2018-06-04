@@ -26,6 +26,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.example.hgjunior.pratorasoproject.adapters.RecipeAdapter;
@@ -53,6 +54,7 @@ public class SearchRecipeActivity extends AppCompatActivity implements TextView.
     private ArrayList<Recipe> recipesAll = new ArrayList<>();
     private DatabaseReference firebase;
     private ValueEventListener valueEventListenerRecipes;
+    Spinner category, difficulty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -162,6 +164,24 @@ public class SearchRecipeActivity extends AppCompatActivity implements TextView.
 
     public void onBackPressed(View v){
         startActivity(new Intent(this, MainActivity.class));
+        return;
+    }
+
+    public void onFilterPressed(View v){
+        setContentView(R.layout.filter);
+                /*category = (Spinner) findViewById(R.id.spin_Category);*/
+        difficulty = (Spinner) findViewById(R.id.spin_Difficulty2);
+
+        /*ArrayAdapter adapter_category = ArrayAdapter.createFromResource(SearchRecipeActivity.this, R.array.category_array, android.R.layout.simple_spinner_dropdown_item);*/
+        ArrayAdapter adapter_difficulty = ArrayAdapter.createFromResource(SearchRecipeActivity.this, R.array.difficulty_array, android.R.layout.simple_spinner_dropdown_item);
+
+        /*category.setAdapter(adapter_category);*/
+        difficulty.setAdapter(adapter_difficulty);
+        return;
+    }
+
+    public void onBackSearchPressed(View v){
+        setContentView(R.layout.activity_search_recipe);
         return;
     }
 

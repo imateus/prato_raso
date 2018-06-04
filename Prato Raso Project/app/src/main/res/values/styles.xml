@@ -48,4 +48,11 @@
         <item name="colorControlHighlight">#fff</item>
         <item name="android:textColorHint">#fff</item>
     </style>
+
+    <style name="AppTheme.Filter" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
 </resources>
