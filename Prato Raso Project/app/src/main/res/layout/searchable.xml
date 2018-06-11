@@ -21,51 +21,49 @@
 
     <EditText
         android:id="@+id/editTextSearch"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="14dp"
+        android:layout_width="218dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="16dp"
         android:ems="10"
         android:hint="busca de receitas"
         android:imeOptions="actionSearch"
         android:inputType="text"
         android:textColor="@android:color/white"
         android:theme="@style/EditTextSearchStyle"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
         app:layout_constraintEnd_toStartOf="@+id/imageButton8"
         app:layout_constraintStart_toEndOf="@+id/imageButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="45dp"
-        android:layout_height="33dp"
-        android:layout_marginBottom="13dp"
-        android:layout_marginEnd="8dp"
+        android:layout_width="51dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="19dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="13dp"
         android:background="@color/cardview_shadow_end_color"
         android:onClick="onBackPressed"
         android:tint="#fff"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
         app:layout_constraintEnd_toStartOf="@+id/editTextSearch"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar3"
         app:srcCompat="?attr/actionModeCloseDrawable" />
 
     <ImageButton
         android:id="@+id/imageButton8"
-        android:layout_width="47dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="13dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginTop="11dp"
+        android:layout_width="55dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="3dp"
         android:background="@color/cardview_shadow_end_color"
         android:onClick="onFilterPressed"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar3"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextSearch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editTextSearch"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/editTextSearch"
         app:srcCompat="@mipmap/ic_system_controller" />
 
 

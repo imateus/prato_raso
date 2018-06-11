@@ -238,6 +238,7 @@ public class RecipeRegister extends AppCompatActivity {
                         recipes.setPreparationList(list_preparation);
                         recipes.setImage(taskSnapshot.getDownloadUrl().toString());
                         recipes.setLike("0");
+                        recipes.setCategory(category.getSelectedItem().toString());
 
                         registerRecipe(recipes);
                     }

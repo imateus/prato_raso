@@ -14,6 +14,7 @@ public class Recipe {
     private String difficulty;
     private List<String> ingredientsList;
     private List<String> preparationList;
+    private String category;
 
     public Recipe() {
     }
@@ -96,5 +97,13 @@ public class Recipe {
 
     public void setPreparationList(List<String> preparationList) {
         this.preparationList = preparationList;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

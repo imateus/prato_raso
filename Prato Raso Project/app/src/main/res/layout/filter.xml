@@ -7,42 +7,27 @@
     android:theme="@style/AppTheme.Filter"
     tools:layout_editor_absoluteY="25dp">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="51dp"
-        android:background="?attr/colorPrimary"
-        app:layout_constraintBottom_toTopOf="@+id/spin_Difficulty5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
     <ImageButton
         android:id="@+id/imageButton3"
-        android:layout_width="46dp"
-        android:layout_height="34dp"
-        android:layout_marginBottom="7dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginTop="7dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
         android:background="@color/cardview_shadow_end_color"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        android:onClick="onConfirmationPressed"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageButton4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="@+id/imageButton4"
         app:srcCompat="@mipmap/ic_confirm" />
 
     <ImageButton
         android:id="@+id/imageButton4"
-        android:layout_width="42dp"
-        android:layout_height="32dp"
-        android:layout_marginBottom="63dp"
-        android:layout_marginEnd="230dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="234dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
         android:background="@color/cardview_shadow_end_color"
         android:onClick="onBackSearchPressed"
         app:layout_constraintBottom_toTopOf="@+id/spin_Difficulty2"
@@ -55,15 +40,71 @@
         android:id="@+id/spin_Difficulty2"
         style="@style/EditTextStyle"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="459dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:padding="0dp"
         android:spinnerMode="dialog"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/spin_Category2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <Spinner
+        android:id="@+id/spin_Category2"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:padding="0dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/btn_search_addIngredient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_Difficulty2" />
+
+    <Button
+        android:id="@+id/btn_search_addIngredient"
+        style="@style/ButtomStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="9dp"
+        android:text="Adicionar novo ingrediente"
+        app:layout_constraintBottom_toTopOf="@+id/cl_ingredient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_Category2" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_ingredient"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="329dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_search_addIngredient">
+
+        <ListView
+            android:id="@+id/lv_search_ingredients"
+            android:layout_width="368dp"
+            android:layout_height="67dp"
+            android:paddingLeft="16dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.355">
+
+        </ListView>
+
+    </android.support.constraint.ConstraintLayout>
 
 </android.support.constraint.ConstraintLayout>
